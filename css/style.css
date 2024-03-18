@@ -1,0 +1,349 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 72px;
+    background-color: #1D3BC1;
+}
+
+.container {
+    width: 1440px;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    background-color: #1D3BC1;
+    padding: 13px 100px 13px 100px;
+
+    .leftbox {
+        display: flex;
+        align-items: center;
+        gap: 56px;
+
+        ul {
+            display: flex;
+
+            li {
+                list-style: none;
+                margin: 0px 24px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+
+    }
+
+    .rightbox {
+        display: flex;
+        align-items: center;
+        gap: 56px;
+
+        input {
+            width: 240px;
+            height: 36px;
+            border-radius: 24px;
+            padding: 9px 16px 9px 16px;
+            background-color: #202E70;
+
+        }
+
+        ul {
+            display: flex;
+
+            li {
+                list-style: none;
+                margin: 0px 16px;
+
+                i {
+                    color: white;
+                }
+
+            }
+        }
+
+    }
+}
+
+.image {
+    width: 100%;
+    height: 483px;
+    background-image: url(../image/image2.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    .text {
+        width: 456px;
+        height: 280px;
+        top: 175px;
+        left: 100px;
+        gap: 36px;
+      position: relative;
+    }
+
+    h1 {
+        font-family: Inter;
+        font-size: 68px;
+        font-weight: 900;
+        line-height: 71px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #FFFFFF;
+       
+
+    }
+
+    p {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #FEFEFEBF;
+     
+
+
+    }
+
+    .boxes {
+        width: 327px;
+        height: 40px;
+        .blue {
+            padding: 15px 16px 15px 16px;
+            border-radius: 24px;
+            background-color: #2143DB;
+            color: white;
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: left;
+            border: none;
+
+
+
+
+
+
+
+
+
+        }
+        .white{
+            width:175px;
+            height: 50px;
+            padding: 0px 16px 0px 16px;
+            gap: 8px;
+            border-radius: 24px;
+            border: none; 
+           
+            
+        }
+    }
+
+}
+.icon{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    gap: 10px;
+justify-content:center ;
+margin-top: 20px;
+    .largeicon{
+        width: 30px;
+        height: 10px;
+        background-color: #1D3BC1;
+        ;
+        border-radius: 10px;
+    }
+    .smallicon{
+        width: 10px;
+        height:10px ;
+        border-radius: 50%;
+        background-color:rgb(213, 198, 198);
+    }
+}
+
+#main{
+    height: 100vw;
+}
+ 
+.mainbox{
+   width: 657px;
+   height: 103px;
+ 
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   margin-top: 40px;
+   .box1{
+    width: 73px;
+    height: 103px;
+    p{
+        width: 93px;
+        
+    }
+    .circle{
+        width:73px ;
+        height: 73px;
+        border-radius: 50%;
+        background-color: #E8EBF7;
+        ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i{
+            font-size: 2em;
+            color: #1D3BC1;
+        }
+    }
+   
+}
+    
+}
+
+
+/* iPad mini 8.3-2 */
+@media only screen and (max-width: 992px) {
+  .mainbox{
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    gap:36px ;
+    justify-content: center;
+    .box1{
+        .circle{
+            i{
+                color: red;
+            }
+           
+        }
+    }
+  }
+
+.container{
+    background-color: red;
+    .rightbox{
+        input{
+            background-color: rgb(96, 23, 23);
+        }
+    }
+}
+
+header{
+    background-color: red;
+}
+.icon{
+    .largeicon{
+        background-color: red;
+    }
+}
+.image{
+    .boxes{
+        .blue{
+            background-color: red;
+        }
+    }
+}
+
+}
+/* iPad mini8.3-1 */
+@media only screen and (max-width: 768px) {
+    .mainbox{
+  
+      display: flex;
+      flex-wrap: wrap;
+      width: 300px;
+      gap:36px ;
+      justify-content: center;
+      .box1{
+          .circle{
+              i{
+                  color:green;
+              }
+             
+          }
+      }
+    }
+  
+  .container{
+      background-color: green;
+      .rightbox{
+          input{
+              background-color:rgb(82, 185, 82);
+          }
+      }
+  }
+  
+  header{
+      background-color: green;
+  }
+  .icon{
+      .largeicon{
+          background-color: green;
+      }
+  }
+  .image{
+      .boxes{
+          .blue{
+              background-color:green;
+          }
+      }
+  }
+  
+  }
+  /* Android Large-1 */
+  @media only screen and (max-width: 575px) {
+    .mainbox{
+  
+      display: flex;
+      flex-wrap: wrap;
+      width: 200px;
+      gap:36px ;
+      justify-content: center;
+      .box1{
+          .circle{
+              i{
+                  color:yellow;
+              }
+             
+          }
+      }
+    }
+  
+  .container{
+      background-color: yellow;
+      .rightbox{
+          input{
+              background-color:rgb(151, 151, 17);
+          }
+      }
+  }
+  
+  header{
+      background-color: yellow;
+  }
+  .icon{
+      .largeicon{
+          background-color: yellow;
+      }
+  }
+  .image{
+      .boxes{
+          .blue{
+              background-color:yellow;
+          }
+      }
+  }
+  
+  }
